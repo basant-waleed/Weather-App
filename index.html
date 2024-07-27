@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>weather app</title>
+</head>
+<body>
+
+ <div class="mainsection mt-5">
+    <div class="container">
+        <h1 class="title">welcome to the weather app </h1>
+        <!-- for country and search input -->
+        <div class="row countryname mt-3 pt-5 w-100 m-auto">
+            <div class="col-md-8 search  m-auto">
+                <input type="text" placeholder="search for your country" class="w-100 m-auto " id="search">
+            </div>
+           
+        </div>
+        <!-- endd -->
+        <!-- for weather details -->
+         <div class="row weatherdetails mt-5">
+            <div class="col-md-4 p-2"  id="todayweather">
+                <div class="card ">
+                        <div class="card-title d-flex justify-content-around align-content-between">
+                            <h3 class="pt-2 text-white" id="today">Today</h3>
+                            <div class="d-flex">
+                                <p class="pt-2 text-white pe-1" id="today-date">date </p>
+                                <p class="pt-2 text-white" id="today-month">month </p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <h4 class="text-white px-5 pt-2" id="location-country">cairo</h4>
+                        </div>
+                    <div class="degree text-center d-flex justify-content-around mt-2 p-5">
+                        <div class="d-flex flex-column">
+                            <h3 class="text-center degreetext" id="degree-today">20 c</h3>
+                            <p class="text-center state" id="today-status">sunny</p>
+                        </div>
+                        <img src="images.jpeg" class="w-25" id="image-today">
+                    </div>
+                    <div class="card-footer w-100">
+                        <div class="d-flex justify-content-around">
+                            <div class="weatherstatus d-flex w-25 ">
+                                <i class="fa-solid fa-temperature-three-quarters pe-3" id="image-humedity"></i> 
+                                <p class="align-self-center" id="no-humidity">20</p>
+                            </div>
+                            <div class="weatherstatus d-flex w-25 " >
+                                <i class="fa-solid fa-wind pe-2"></i>
+                                <p class="align-self-center" id="no-wind">20</p>
+                            </div>
+                            <div class="weatherstatus d-flex w-25 ">
+                                <i class="fa-solid fa-wind px-3"></i>
+                                <p class="align-self-center" id="windder">20</p>
+                            </div>
+                       
+                        </div>
+                    </div>
+
+                       
+
+                    </div>
+                </div>
+            <!-- seocnd card -->
+           <div class="col-md-4 " id="tomorrowWeather">
+            <div class="card secondcard ">
+                <div class="card-title d-flex justify-content-around align-content-between flex-column">
+                    <h3 class="pt-2 text-white next-date">friday</h3>
+                </div>
+            
+            <div class="degree text-center d-flex justify-content-around mt-2 flex-column p-2">
+                <img src="images.jpeg" class="w-25 align-content-center justify-content-center m-auto next-image">
+                <div class="d-flex flex-column">
+                    <span>max temp</span>
+                    <h3 class="text-center degreetext next-max-temp"></h3>
+                    <span>min temp</span>
+                    <h4 class="text-center degreetext next-min-temp">5 c</h4>
+                    <p class="text-center state next-condition">sunny</p>
+                </div>
+                
+            </div>
+           
+            </div>
+
+           </div>
+                
+
+            <!-- third card -->
+            <div class="col-md-4" id="afterWeather">
+                <div class="card">
+                    <div class="card-title d-flex justify-content-around align-content-between">
+                        <h3 class="pt-2 text-white next-date">saturday</h3>
+                    </div>
+                <div class="degree text-center d-flex justify-content-around  flex-column p-1">
+                    <img src="images.jpeg" class="w-25 m-auto pt-3 next-image">
+                    <div class="d-flex flex-column">
+                        <span>max temp</span>
+                        <h3 class="text-center degreetext  next-max-temp">5 c</h3>
+                        <span>min temp</span>
+                        <h4 class="text-center degreetext next-min-temp">5 c</h4>
+                        <p class="text-center state next-condition">sunny</p>
+                    </div>
+             
+                </div>
+                
+                </div>
+    
+               </div>
+            </div>
+            
+    
+         </div>
+         <!-- end -->
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
